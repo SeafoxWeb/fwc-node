@@ -1,12 +1,47 @@
+body {
+    padding-top: 90px;
+	background: #111 url("http://www.fluxwingcantina.co.uk/images/stars.png") repeat top;
+}
+
+.navbar {
+	font-family: 'Oswald', sans-serif;
+    padding: 10px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+.top-nav-collapse {
+    padding: 100px;
+}
+
 .thumbnail img {
-    max-height: 180px;
+	padding: 16px;
+    max-height: 300px;
 }
 
 .thumbnail .description {
     color: #777;
 }
 
+.thumbnail .productTitle {
+    text-align: center;
+}
+
 .price {
     font-weight: bold;
     font-size: 16px;
+}
+
+.footer {
+    color: #ccc;
+    text-align: center;
+}
+
+.footer a {
+    color: #c90;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #25b;
 }
