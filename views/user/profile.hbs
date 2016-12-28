@@ -3,11 +3,11 @@
 		<h1>User Profile</h1>
 		<hr>
 		<h2>My Orders</h2>
-		{{# each orders }}
+		{{#each orders }}
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<ul class="list-group">
-					{{# each this.items }}
+					{{#each this.items }}
 						<li class="list-group-item">
 							<span class="badge">£{{ this.price }}</span>
 							{{ this.item.title }} | {{ this.qty }} Units

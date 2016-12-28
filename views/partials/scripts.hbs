@@ -1,5 +1,32 @@
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+<!-- Bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- My javascripts -->
-<script type='text/javascript' href='/javascripts/navCollapse.js'></script>
-<script type='text/javascript' href='/javascripts/scrollUp.js'></script>
+<script>
+//jQuery to scroll to top
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        }
+        else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    $('.scrollToTop').click(function() {
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});
+
+//jQuery to change the navbar on scroll
+$(document).ready(function() {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 90) {
+            $('.navbar-inverse').addClass('navbar-shrink');
+        }
+        else {
+            $('.navbar-inverse').removeClass('navbar-shrink');
+        }
+    });
+});
+</script>

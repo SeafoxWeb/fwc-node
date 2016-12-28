@@ -19,7 +19,7 @@ router.get('/profile', isLoggedIn, function(req, res, next) {
 			cart = new Cart(order.cart);
 			order.items = cart.generateArray();
 		});
-		res.render('/user/profile', { orders: orders });
+		res.render('user/profile', { orders: orders });
 	});
 });
 
@@ -41,7 +41,7 @@ router.post('/signup', passport.authenticate('local.signup', {
 	failureRedirect: '/user/signup',
 	failureFlash: true
 }), function(req, res, next) {
-	if (req,session.oldUrl) {
+	if (req.session.oldUrl) {
 		var oldUrl = req.session.oldUrl;
 		req.session.oldUrl = null;
 		res.redirect(req.session.oldUrl);

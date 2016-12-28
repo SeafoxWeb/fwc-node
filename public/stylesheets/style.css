@@ -1,17 +1,21 @@
 body {
-    padding-top: 90px;
+    padding-top: 120px;
 	background: #111 url("http://www.fluxwingcantina.co.uk/images/stars.png") repeat top;
 }
 
+a { color: #c90; } a:hover { text-decoration: none; color: #25b; }
+
 .navbar {
 	font-family: 'Oswald', sans-serif;
-    padding: 10px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    padding: 20px 0;
+    -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
 }
-.top-nav-collapse {
-    padding: 100px;
+
+.navbar-shrink {
+    padding: 0;
+    background: #222;
 }
 
 .thumbnail img {
@@ -33,15 +37,5 @@ body {
 }
 
 .footer {
-    color: #ccc;
     text-align: center;
-}
-
-.footer a {
-    color: #c90;
-}
-
-.footer a:hover {
-    text-decoration: none;
-    color: #25b;
 }
