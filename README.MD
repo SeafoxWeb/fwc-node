@@ -1,1 +1,1 @@
-## Fluxwing Cantina node package"# fwcNode" 
+## Fluxwing Cantina node package"# fwc-node" 
